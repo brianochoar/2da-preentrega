@@ -1,6 +1,6 @@
-/* variables */
+/* /* /* /* variables */
 
-let nombre;
+/* let nombre;
 let juguetes;
 let precios;
 let cantidad;
@@ -68,5 +68,5 @@ factura=(factura+total);
 alert(`Gracias por tu compra ${nombre}\n
 Los articulos de tu carro de compras son:\n
 ${ticket}\n
-El total de tu fatura es: $${factura}`);
+El total de tu fatura es: $${factura}`); */
 
