@@ -1,4 +1,4 @@
-let nombre;
+/* let nombre;
 let caballero;
 let caballerodorado;
 
@@ -64,11 +64,7 @@ const Tauro = new CaballeroDorado("Aldebaran", "Tauro", "El Gran Cuerno");
 const Capricornio = new CaballeroDorado("Shura", "Capricornio", "Excalibur");
 const Leo = new CaballeroDorado("Aioria", "Leo", "Plasma Relampago");
 const Virgo = new CaballeroDorado("Shaka", "Virgo", "El tesoro del cielo");
-const Cancer = new CaballeroDorado(
-  "Mascara de la Muerte",
-  "Cancer",
-  "Sekishiki Meikai Ha"
-);
+const Cancer = new CaballeroDorado("Mascara de la Muerte","Cancer","Sekishiki Meikai Ha");
 const Acuario = new CaballeroDorado("Camus", "Acuario", "Ejecucion Aurora");
 const Pegasus = new CaballeroDorado("Seiya", "Sagitario", "Meteoro de Pegasus");
 const Dragón = new CaballeroDorado("Shiryu", "Capricornio", "Dragon Naciente");
@@ -249,20 +245,14 @@ function Ataques(nombre, signo, ataque, sentido) {
   this.ataque = ataque;
   this.sentido = sentido;
 
-  this.pelea = function(atacado) {
+  this.pelea = function (atacado) {
     alert(`El ${this.caballero} logra elevarse a su ${this.ataque} ataca al Caballero de ${caballerodorado} y bloquea su ${this.sentido} \n
-venciendo asi al Caballero Dorado de ${atacado} y le roba su armadura` );
+venciendo asi al Caballero Dorado de ${atacado} y le roba su armadura`);
     alert(`El ${this.caballero} Ahora es el Caballero Dorado de ${atacado}`);
   };
-
 }
 
-const lucha = new Ataques(
-  `${caballero}`,
-  "Sagitario",
-  "7mo sentido",
-  "vista"
-);
+const lucha = new Ataques(`${caballero}`, "Sagitario", "7mo sentido", "vista");
 const atacado = new Ataques(
   `${caballerodorado}`,
   "Sagitario",
@@ -274,61 +264,59 @@ lucha.pelea(atacado.caballero);
 
 ///Clases
 
-alert(`Tu primera misión ha sido completada ${caballero} Ahora debes asesinar al Patriarca para salvar a Saori`); 
+alert(
+  `Tu primera misión ha sido completada ${caballero} Ahora debes asesinar al Patriarca para salvar a Saori`
+);
 
-class Patriarca{
+class Patriarca {
   nombre;
   golpe;
 
-
-  constructor(nombre, golpe){
+  constructor(nombre, golpe) {
     this.nombre = nombre;
     this.golpe = golpe;
   }
 
-  pelea = function(patriarca) {
-    alert(`El ${this.nombre} ataca con su golpe de ${this.golpe} al patriarca pero es insuficiente`);
-    alert(`El ${patriarca} conecta su Capitulación del Cielo y el Demonio al ${caballero} quien cae tendido`);
+  pelea = function (patriarca) {
+    alert(
+      `El ${this.nombre} ataca con su golpe de ${this.golpe} al patriarca pero es insuficiente`
+    );
+    alert(
+      `El ${patriarca} conecta su Capitulación del Cielo y el Demonio al ${caballero} quien cae tendido`
+    );
   };
-
-
 }
 
-const luchador = new Patriarca(
-  `${caballero}`,
-  "Flechas mortales"
-);
+const luchador = new Patriarca(`${caballero}`, "Flechas mortales");
 
-const final = new Patriarca(
-  'Patriarca',
-  "Flechas mortales"
-);
+const final = new Patriarca("Patriarca", "Flechas mortales");
 
 luchador.pelea(final.nombre);
 
-
-
 ///Arrays
 
-alert(`NO estas solo ${caballero} tus amigos han venido a ayudarte!`)
+alert(`NO estas solo ${caballero} tus amigos han venido a ayudarte!`);
 
-const bronce= [
-  {nombre:"Shiryu", tipo:"Caballero Dragon", grito:"Dragon Naciente"},
-  {nombre:"Seiya", tipo:"Caballero Pegasus", grito:"Meteoro de Pegasus"},
-  {nombre:"Hyoga", tipo:"Caballero del Cisne", grito:"Polvo de Diamante"},
-  {nombre:"Shun", tipo:"Caballero de Andromeda", grito:"Cadena de andromeda"},
-  {nombre:"Ikki", tipo:"Caballero del Fenix", grito:"Ave Fenix"}
-
+const bronce = [
+  { nombre: "Shiryu", tipo: "Caballero Dragon", grito: "Dragon Naciente" },
+  { nombre: "Seiya", tipo: "Caballero Pegasus", grito: "Meteoro de Pegasus" },
+  { nombre: "Hyoga", tipo: "Caballero del Cisne", grito: "Polvo de Diamante" },
+  {
+    nombre: "Shun",
+    tipo: "Caballero de Andromeda",
+    grito: "Cadena de andromeda",
+  },
+  { nombre: "Ikki", tipo: "Caballero del Fenix", grito: "Ave Fenix" },
 ];
 
-
-for (let item of bronce){
-  alert(`${item.nombre} El ${item.tipo} conecta su golpe de ${item.grito} al Patriarca`); 
+for (let item of bronce) {
+  alert(
+    `${item.nombre} El ${item.tipo} conecta su golpe de ${item.grito} al Patriarca`
+  );
 }
 
-alert('El patriarca ha muerto'); 
+alert("El patriarca ha muerto");
 /// FUNCION DE ORDEN SUPERIOR
-
 
 function Saori(salvar) {
   if (salvar == `${caballero}`) {
@@ -340,4 +328,4 @@ function Saori(salvar) {
 
 const Salvacion = Saori(`${caballero}`);
 Salvacion(`${caballero}`);
-
+ */
